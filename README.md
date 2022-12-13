@@ -49,6 +49,12 @@ Due to independency during microfrontend development, each team might use its ow
 This plugin allows to recognize and to mark backend calls of the same resource type.
 When detected, it adds "__service.id" tag to the span
 
+## Creating new trace
+
+A new trace is always created when the page is loaded.
+There is also possibility to create a new trace programmatically calling global `window.__resetTrace()` method.
+Each time called - a new parent trace is created.
+
 ## Installation
 
     npm i -S mashroom-zipkin-page-enhancement
