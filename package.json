@@ -1,0 +1,43 @@
+{
+  "name": "mashroom-zipkin-page-enhancement",
+  "version": "1.0.0",
+  "description": "Mashroom Page Enhancement allowing grouping of spans created within one page",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/bootstrap.ts -o dist/bootstrap.js && webpack",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint ./src --ext .ts",
+    "prepublishOnly": "npm run lint && npm run type-check && npm run build"
+  },
+  "keywords": [
+    "Mashroom",
+    "Zipkin",
+    "Page",
+    "Enhancement",
+    "Tracing"
+  ],
+  "author": "Milan Heimschild",
+  "repository": "github:mheimschild/mashroom-zipkin-page-enhancement",
+  "files": [
+    "dist/**",
+    "mashroom.json"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@mashroom/mashroom": "^2.2.1",
+    "@mashroom/mashroom-portal": "^2.2.1",
+    "@types/zipkin-transport-http": "^0.12.1",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "babel-loader": "^9.1.0",
+    "eslint": "^8.29.0",
+    "nodemon": "^2.0.20",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "zipkin": "^0.22.0",
+    "zipkin-transport-http": "^0.22.0"
+  }
+}
