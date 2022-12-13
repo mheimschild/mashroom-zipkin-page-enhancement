@@ -1,6 +1,6 @@
 {
   "name": "mashroom-zipkin-page-enhancement",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mashroom Page Enhancement allowing grouping of spans created within one page",
   "main": "index.js",
   "scripts": {
